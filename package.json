@@ -1,0 +1,35 @@
+{
+  "name": "mascotas-backend",
+  "version": "1.0.0",
+  "description": "Apartado de backend para la aplicación web 'registro de mascotas'",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "dev": "nodemon build/index.js",
+    "server": "concurrently --kill-others \"npm run build\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelesMorales513/mascotas-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelesMorales513/mascotas-backend/issues"
+  },
+  "homepage": "https://github.com/AngelesMorales513/mascotas-backend#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "promise-mysql": "^5.0.3",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,6 +1,6 @@
 import express , { Application } from 'express';
 import morgan from 'morgan';
-import cors from 'cors'
+import cors from 'cors';
 
 // routes
 import usuarioRoutes from './routes/usuariosRoutes';
